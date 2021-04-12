@@ -14,7 +14,7 @@ if platform.platform().startswith('Windows'):
     )
 else:
     logging_file = os.path.join( # os.path.join函数确保完整的位置路径符合当前操作系统预期格式
-        os.path.dirname(os.path.abspath(__file__)), # 获取当前文件所在目录的绝对路径
+        os.path.dirname(os.path.abspath(__file__)), # 获取当前文件所在目录的绝对路径 os.getcwd()
         'test.log'
     )
 print("Logging to", logging_file)
